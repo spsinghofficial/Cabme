@@ -12,9 +12,11 @@
 		5BA9BC9122F722510067B582 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BA9BC8F22F722510067B582 /* Main.storyboard */; };
 		5BA9BC9322F722520067B582 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BA9BC9222F722520067B582 /* Assets.xcassets */; };
 		5BA9BC9622F722520067B582 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BA9BC9422F722520067B582 /* LaunchScreen.storyboard */; };
+		7AA0CF575D35DA9B990B4707 /* Pods_Cabme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 051332A5EF68BCA38B63189A /* Pods_Cabme.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		051332A5EF68BCA38B63189A /* Pods_Cabme.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cabme.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BA9BC8822F722510067B582 /* Cabme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cabme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BA9BC8B22F722510067B582 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BA9BC8D22F722510067B582 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		5BA9BC9222F722520067B582 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BA9BC9522F722520067B582 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BA9BC9722F722520067B582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AA43DCEE36EED061B9A3220 /* Pods-Cabme.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cabme.debug.xcconfig"; path = "Target Support Files/Pods-Cabme/Pods-Cabme.debug.xcconfig"; sourceTree = "<group>"; };
+		A3E1FBE815A8399269FC080E /* Pods-Cabme.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cabme.release.xcconfig"; path = "Target Support Files/Pods-Cabme/Pods-Cabme.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AA0CF575D35DA9B990B4707 /* Pods_Cabme.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D56FE64E4CD91BD2BAA152D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				051332A5EF68BCA38B63189A /* Pods_Cabme.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A715379A2CDAC40A391D37F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7AA43DCEE36EED061B9A3220 /* Pods-Cabme.debug.xcconfig */,
+				A3E1FBE815A8399269FC080E /* Pods-Cabme.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		5BA9BC7F22F722510067B582 = {
 			isa = PBXGroup;
 			children = (
 				5BA9BC8A22F722510067B582 /* Cabme */,
 				5BA9BC8922F722510067B582 /* Products */,
+				1A715379A2CDAC40A391D37F /* Pods */,
+				0D56FE64E4CD91BD2BAA152D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BA9BC9A22F722520067B582 /* Build configuration list for PBXNativeTarget "Cabme" */;
 			buildPhases = (
+				BA82E00C0F5C9799709DF0C6 /* [CP] Check Pods Manifest.lock */,
 				5BA9BC8422F722510067B582 /* Sources */,
 				5BA9BC8522F722510067B582 /* Frameworks */,
 				5BA9BC8622F722510067B582 /* Resources */,
+				C3AF9FD9E30629EAC76A6358 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,61 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BA82E00C0F5C9799709DF0C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cabme-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3AF9FD9E30629EAC76A6358 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cabme/Pods-Cabme-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/RevealingSplashView/RevealingSplashView.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealingSplashView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cabme/Pods-Cabme-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5BA9BC8422F722510067B582 /* Sources */ = {
@@ -280,6 +362,7 @@
 		};
 		5BA9BC9B22F722520067B582 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AA43DCEE36EED061B9A3220 /* Pods-Cabme.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +381,7 @@
 		};
 		5BA9BC9C22F722520067B582 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3E1FBE815A8399269FC080E /* Pods-Cabme.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
