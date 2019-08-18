@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B6A8FD822FCE5CC00D4E4A2 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A8FD722FCE5CC00D4E4A2 /* GradientView.swift */; };
 		5BA9BC8C22F722510067B582 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA9BC8B22F722510067B582 /* AppDelegate.swift */; };
 		5BA9BC8E22F722510067B582 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA9BC8D22F722510067B582 /* ViewController.swift */; };
 		5BA9BC9122F722510067B582 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BA9BC8F22F722510067B582 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		051332A5EF68BCA38B63189A /* Pods_Cabme.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cabme.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B6A8FD722FCE5CC00D4E4A2 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		5BA9BC8822F722510067B582 /* Cabme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cabme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BA9BC8B22F722510067B582 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BA9BC8D22F722510067B582 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,8 +56,29 @@
 				7AA43DCEE36EED061B9A3220 /* Pods-Cabme.debug.xcconfig */,
 				A3E1FBE815A8399269FC080E /* Pods-Cabme.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		5B6A8FD422FCE58500D4E4A2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5B6A8FD522FCE59000D4E4A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5B6A8FD722FCE5CC00D4E4A2 /* GradientView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5B6A8FD622FCE59600D4E4A2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		5BA9BC7F22F722510067B582 = {
@@ -79,6 +102,9 @@
 		5BA9BC8A22F722510067B582 /* Cabme */ = {
 			isa = PBXGroup;
 			children = (
+				5B6A8FD622FCE59600D4E4A2 /* Controller */,
+				5B6A8FD522FCE59000D4E4A2 /* View */,
+				5B6A8FD422FCE58500D4E4A2 /* Model */,
 				5BA9BC8B22F722510067B582 /* AppDelegate.swift */,
 				5BA9BC8D22F722510067B582 /* ViewController.swift */,
 				5BA9BC8F22F722510067B582 /* Main.storyboard */,
@@ -219,6 +245,7 @@
 			files = (
 				5BA9BC8E22F722510067B582 /* ViewController.swift in Sources */,
 				5BA9BC8C22F722510067B582 /* AppDelegate.swift in Sources */,
+				5B6A8FD822FCE5CC00D4E4A2 /* GradientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
