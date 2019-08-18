@@ -10,11 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var requestRideBtn: RoundedShadowButton!
     override func viewDidLoad() {
         super.viewDidLoad()
     
     }
 
-
+    @IBAction func requestRide(_ sender: Any) {
+        requestRideBtn.animateButton(shouldLoad: true, withMessage: "requesting ride....")
+    }
+    
 }
 

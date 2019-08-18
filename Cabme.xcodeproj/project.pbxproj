@@ -10,6 +10,8 @@
 		5B6A8FD822FCE5CC00D4E4A2 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A8FD722FCE5CC00D4E4A2 /* GradientView.swift */; };
 		5BA0CD3B23098F0600739B5B /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA0CD3A23098F0600739B5B /* RoundImageView.swift */; };
 		5BA0CD3D230992E000739B5B /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA0CD3C230992E000739B5B /* RoundedShadowView.swift */; };
+		5BA0CD3F2309950D00739B5B /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA0CD3E2309950D00739B5B /* CircleView.swift */; };
+		5BA0CD41230995AF00739B5B /* RoundedShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA0CD40230995AF00739B5B /* RoundedShadowButton.swift */; };
 		5BA9BC8C22F722510067B582 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA9BC8B22F722510067B582 /* AppDelegate.swift */; };
 		5BA9BC8E22F722510067B582 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA9BC8D22F722510067B582 /* ViewController.swift */; };
 		5BA9BC9122F722510067B582 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BA9BC8F22F722510067B582 /* Main.storyboard */; };
@@ -23,6 +25,8 @@
 		5B6A8FD722FCE5CC00D4E4A2 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		5BA0CD3A23098F0600739B5B /* RoundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
 		5BA0CD3C230992E000739B5B /* RoundedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
+		5BA0CD3E2309950D00739B5B /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		5BA0CD40230995AF00739B5B /* RoundedShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowButton.swift; sourceTree = "<group>"; };
 		5BA9BC8822F722510067B582 /* Cabme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cabme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BA9BC8B22F722510067B582 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BA9BC8D22F722510067B582 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +80,8 @@
 				5B6A8FD722FCE5CC00D4E4A2 /* GradientView.swift */,
 				5BA0CD3A23098F0600739B5B /* RoundImageView.swift */,
 				5BA0CD3C230992E000739B5B /* RoundedShadowView.swift */,
+				5BA0CD3E2309950D00739B5B /* CircleView.swift */,
+				5BA0CD40230995AF00739B5B /* RoundedShadowButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -249,6 +255,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BA0CD41230995AF00739B5B /* RoundedShadowButton.swift in Sources */,
+				5BA0CD3F2309950D00739B5B /* CircleView.swift in Sources */,
 				5BA9BC8E22F722510067B582 /* ViewController.swift in Sources */,
 				5BA0CD3B23098F0600739B5B /* RoundImageView.swift in Sources */,
 				5BA0CD3D230992E000739B5B /* RoundedShadowView.swift in Sources */,
